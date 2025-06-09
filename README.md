@@ -37,3 +37,68 @@ float myVar = 3.14f;
 float myVar2 = 3.14F;
 ```
 
+## Operators
+There are mainly 3 different types of operators.  
+1. Arithmetic
+2. Relational
+3. Logical
+
+### 1. Arithmetic Operators
+Operators in java are mostly the same as Python (+, -, *, /, %)  
+In Java, there is no `//` as in Python operator, once it already truncate values considering number's type, such as int.  
+```python
+a = 15 / 10 
+# a = 1.5
+
+b = 15 // 10
+# b = 1
+```
+```java
+int a = 15 / 10;
+// a = 1
+double b = 15.0 / 10.0;
+// b = 1.5;
+```
+As default, numbers with decimals are considered double.
+`%` is the modulus sign, so `10%15 = 10`  
+In the operation `a + b = 10`, `a` and `b` are the ***operands*** while `+` is the ***operator***
+Unlike Python, Java has the following operators: `++` and `--`, appended at the end of variables.  
+This kind of operation is also called ***unary*** operator, once it only takes one ***operand***  
+It is a shortcut for the operator `+=1` and `-=1`, e.g.:
+```java
+int a = 10;
+a++;
+// now a = 11
+```
+### 2. Relational Operators
+Similar to Python, Java has the following operators: <, >, <=, >=, ==, !=  
+When comparing two String values (or any other Reference Type), using `==` will compare their addresses and not their values  
+So, to properly compare two Strings, you should use `.equals()` method to compare.  
+```java
+String fristString = new String("a");
+String secondString = new String("a");
+firstString.equals(secondString) // = true
+firstString == secondString // = false
+```
+**if `new String()` is not used, both `firstString` and `secondString` would end up with the same address, due to String interning (optimization on compile time)*
+Differently from Java, Python has a slightly different behaviour when doing String Interning, once it checks if there is any spaces or special characters before attributing the same address. There are other rules not worthy to detail here in this document.  
+
+### 3. Logical Operators
+```text
+| Operator | Symbol |
+|----------|--------|
+| AND      | `&&`   |
+| OR       | `||`   |
+| NOT      | `!`    |
+```
+Some examples:
+```java
+boolean value1 = true;
+boolean value2 = false;
+
+System.out.println(value1 && value2); // false
+System.out.println(value1 || value2); // true
+System.out.println(!value1); // false
+```
+
+
