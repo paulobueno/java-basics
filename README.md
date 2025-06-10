@@ -101,4 +101,6 @@ System.out.println(value1 || value2); // true
 System.out.println(!value1); // false
 ```
 
+## Libraries
 
+By default, `java.lang` is imported automatically. That is where classes like `String` live.  
