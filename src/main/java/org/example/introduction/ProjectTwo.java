@@ -1,4 +1,4 @@
-package org.example;
+package org.example.introduction;
 import java.util.Scanner;
 
 public class ProjectTwo {

@@ -104,3 +104,11 @@ System.out.println(!value1); // false
 ## Libraries
 
 By default, `java.lang` is imported automatically. That is where classes like `String` live.  
+
+## Control Statements
+### Sequential (Sequence)
+Like in C, that is an imperative programming language, it executes line-by-line.
+### Selection (Decision)
+Examples are `if`, `else`
+### Repetition (Loops)
+Examples are `while`, `for`
