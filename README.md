@@ -109,6 +109,6 @@ By default, `java.lang` is imported automatically. That is where classes like `S
 ### Sequential (Sequence)
 Like in C, that is an imperative programming language, it executes line-by-line.
 ### Selection (Decision)
-Examples are `if`, `else`
+Examples are `if`, `else`, `switch`
 ### Repetition (Loops)
 Examples are `while`, `for`
