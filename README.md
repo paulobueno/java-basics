@@ -111,4 +111,29 @@ Like in C, that is an imperative programming language, it executes line-by-line.
 ### Selection (Decision)
 Examples are `if`, `else`, `switch`
 ### Repetition (Loops)
-Examples are `while`, `for`
+Examples are `while`, `for`, `do-while`  
+There are two types: (1) Counter-controlled (2) Sentinel-controlled
+
+## Arrays
+There are two types of arrays:
+1. Array
+2. ArrayList  
+
+### Array
+You have to declare the size of the array as the following:
+```java
+int[] myArray = new int[10];
+```
+To get a given element: `myArray[i]`  
+To get its size: `myArray.lenght`
+
+### ArrayList
+Unlike `Array`, `ArrayList` can have its size changed.  
+Also, they can only store reference variable, such as `String`, `HashMap`, `Object`, etc.  
+```java
+import java.util.ArrayList;
+
+ArrayList<String> names = new ArrayList<>();
+```
+You can find it in `java.util` library.  
+To get its size, you can do `myArray.size()`
