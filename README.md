@@ -129,11 +129,23 @@ To get its size: `myArray.lenght`
 
 ### ArrayList
 Unlike `Array`, `ArrayList` can have its size changed.  
-Also, they can only store reference variable, such as `String`, `HashMap`, `Object`, etc.  
 ```java
 import java.util.ArrayList;
 
 ArrayList<String> names = new ArrayList<>();
 ```
 You can find it in `java.util` library.  
-To get its size, you can do `myArray.size()`
+To get its size, you can do `myArray.size()`  
+It is an entity of type known as generic, which can only store reference variables.  
+Just to remember, here are some examples of reference variables: `String`, `HashMap`, `Object`  
+To overcome this limitation, there are Wrapper classes that literally wraps primitive variables,  
+transforming it into a reference type variable.
+
+## Wrapper classes
+Wrapper classes are classes that wrap primitive type variables into reference type variables.  
+They are useful to be able to use classes that only receive reference type variables, such as `ArrayList`  
+The list of Wrapper classes are the following:  
+`Byte`, `Short`, `Long`, `Integer`, `Float`, `Double`, `Character`, `Boolean`  
+Taking advantage of a process called ***auto-unbox***, this type of class receives the primitive value and transforms it into the final value type.  
+This process also deals with unboxing of variables, once you can cast an `Int` into `int`.
+
