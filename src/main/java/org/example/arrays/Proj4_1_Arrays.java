@@ -1,19 +1,18 @@
 package org.example.arrays;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Proj4_1_Arrays {
 
      public static void main(String[] args) {
-         ArrayList<Integer> numbersList = new ArrayList<>();
+         int[] numbersList = new int[5];
          Scanner keyboard = new Scanner(System.in);
          int userNumber;
 
          System.out.println("Insert five integers.");
          for (int i = 0; i < 5; i++) {
-             System.out.println("# ");
+             System.out.print("# ");
              userNumber = keyboard.nextInt();
-             numbersList.add(userNumber);
+             numbersList[i] = userNumber;
          }
 
          System.out.println("Your numbers, multiplied by 2 are:");
