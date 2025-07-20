@@ -146,6 +146,6 @@ Wrapper classes are classes that wrap primitive type variables into reference ty
 They are useful to be able to use classes that only receive reference type variables, such as `ArrayList`  
 The list of Wrapper classes are the following:  
 `Byte`, `Short`, `Long`, `Integer`, `Float`, `Double`, `Character`, `Boolean`  
-Taking advantage of a process called ***auto-unbox***, this type of class receives the primitive value and transforms it into the final value type.  
+Taking advantage of a process called ***auto-unboxing***, this type of class receives the primitive value and transforms it into the final value type.  
 This process also deals with unboxing of variables, once you can cast an `Int` into `int`.
 
