@@ -149,14 +149,27 @@ The list of Wrapper classes are the following:
 Taking advantage of a process called ***auto-unboxing***, this type of class receives the primitive value and transforms it into the final value type.  
 This process also deals with unboxing of variables, once you can cast an `Int` into `int`.
 
-## Strings
+## String
 The reference type `String` has built in methods that help us perform operations such as get a char given an index, compare two Strings and more.  
 Here is a small set of available methods:
-- `.compareTo(otherString)`
+- `.compareTo(<otherString>)`
 - `.length()`
-- `.charAt()`  
+- `.charAt(<int>)`  
+- `.toLowerCase()`
+- `.toUpperCase()`
+- `.substring(<init>, <optional_end_not_inclusive>)`
+- `.indexOf(<some_string>)`
 ### `compareTo(otherString)` method
 This method compares two Strings, char by char.  
 As each char correspond to a number, based on ASCII table, we can perform this kind of operation.  
 Upper case letters comes before lower case letters, so, when comparing `A` and `a`, capital letter would be less than its lower case.  
 So, `upperCaseA.compareTo(lowerCaseA)` would be equals to -32.
+
+## StringBuilder
+Very similar to `String` class, but with an important difference, it is **mutable**  
+It has all `String` class' methods plus some others, once it is mutable while `String` isn't  
+Some of these incremental methods are:  
+- `.append(<string>)`
+- `.insert(<index>, <string>)`
+- `.replace(<index_start>, <index_end>, <string>)`
+- `.delete(<index_start>, <index_end>)`
