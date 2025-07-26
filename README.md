@@ -173,3 +173,13 @@ Some of these incremental methods are:
 - `.insert(<index>, <string>)`
 - `.replace(<index_start>, <index_end>, <string>)`
 - `.delete(<index_start>, <index_end>)`
+
+## Methods
+All methods have `non-access modifiers`, which defines what output is expected, such as:
+- `void`
+- `int`
+- `String`
+- `null`
+- ...  
+The modifier `void` is a special one, that tell us that the given method don't return any value.  
+Methods can return `null` only if they are defined to return `reference` types, such as Int. So, if the method is defined to return `int`, it would raise an error (compile or runtime).

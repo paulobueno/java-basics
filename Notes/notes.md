@@ -35,3 +35,7 @@ referring in other part of the code, it would infer that `var` is `int` type
 var myValue = returnTen();
 ```
 Important notes: (1) It works only in local variables, such as in methods, for loops, etc. Not in class member variables.
+
+## Arguments Vs Parameters
+Parameters: Named variables that are defined as part of a method/class
+Arguments: The actual value passed to be attributed to the parameters of a method/class
