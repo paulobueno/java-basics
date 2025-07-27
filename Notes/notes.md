@@ -49,3 +49,13 @@ Example of languages that use `pass by reference` are `Python`, `C++` and `C#`.
 ## Method Overloading
 Inside a class, you can define many methods with equal name.
 To that work, all must have different parameter combinations, such as quantity, order and type.
+
+## Methods calls And Recursion
+Methods can call other methods or itself. When calling itself, the operation is named `recursion`.  
+To successfully create a `recursion`, it have to have at least one base case and one recursion.  
+The `base case` is necessary so you don't end up with an infinite recursion calls.
+
+## 2D, 3D, xD arrays
+2D arrays are also named `matrix`, where you can store values for columns and rows in the same object (array inside another array).  
+The generalization of `matrix` (2D or more dimensions), is named `tensor`.  
+This name has influenced the name of `tensorflow`, a library that make `matrix` computation efficient.  
