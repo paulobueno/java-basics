@@ -23,7 +23,7 @@ public class Proj6_2_TicTacToe {
 
         showBoard(board);
         String winner = getWinner(board, turn - 1);
-        if (!winner.isBlank()) {
+        if (!winner.equals(DRAW)) {
             System.out.println("Congratulations! the winner is " + winner);
         }  else {
             System.out.println("Too bad. It is a DRAW");
