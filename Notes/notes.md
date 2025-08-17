@@ -59,3 +59,9 @@ The `base case` is necessary so you don't end up with an infinite recursion call
 2D arrays are also named `matrix`, where you can store values for columns and rows in the same object (array inside another array).  
 The generalization of `matrix` (2D or more dimensions), is named `tensor`.  
 This name has influenced the name of `tensorflow`, a library that make `matrix` computation efficient.  
+
+## Method Overloading and Method Signature
+When creating method overload, you have to create diferent signatures with the same method's name. A method signature is compose by:
+- Method's name
+- Parameters types
+- Parameters orders
