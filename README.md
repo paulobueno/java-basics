@@ -183,3 +183,20 @@ All methods have `non-access modifiers`, which defines what output is expected, 
 - ...  
 The modifier `void` is a special one, that tell us that the given method don't return any value.  
 Methods can return `null` only if they are defined to return `reference` types, such as Int. So, if the method is defined to return `int`, it would raise an error (compile or runtime).
+
+## Object-Oriented Programming
+In programming, there are some paradigms available to right an app. The two most common paradigms are the following:
+- Procedural: Focused on procedures (or behaviours/methods) that perform tasks.
+- Object-oriented programming: Focused on both behaviours+data and other principles
+### Principles
+- Encapsulation
+- Inheritance
+- Polymorphism
+### Encapsulation
+Uniting of behaviors and data in a single entity known as object.  
+#### Portability
+Gives the ability to gather different data regarding an object in one place, the object itself.
+#### Security
+Gives the ability to hide and protect methods and data inside the object from unauthorised outside access.
+### Notes
+In Java, a method that is not defined as `static` is an instant method.

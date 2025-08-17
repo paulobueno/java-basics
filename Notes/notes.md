@@ -65,3 +65,12 @@ When creating method overload, you have to create diferent signatures with the s
 - Method's name
 - Parameters types
 - Parameters orders
+
+## Constructors
+As constructors doesn't return value, it doesn't allow any modifier, even `void`.  
+### Calling Setters in constructors
+In general, it doesn't use setters to set values when instantiating for these reasons:
+- Performance: Direct assignment is faster that calling setters
+- Simplicity and Clarity
+- Avoid issues with inheritance (overwriting a method can lead to unexpected behaviours)
+But if there are validation or data transformation, you might use setters in your constructor
