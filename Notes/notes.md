@@ -74,3 +74,20 @@ In general, it doesn't use setters to set values when instantiating for these re
 - Simplicity and Clarity
 - Avoid issues with inheritance (overwriting a method can lead to unexpected behaviours)
 But if there are validation or data transformation, you might use setters in your constructor
+
+## Usefull commands
+
+Compile a .java file into .class
+```bash
+javac <FileName>.java
+```
+
+Execute the compiled file
+```bash
+java <FileName>
+```
+It doesn't nees the extension `.class` when executing it.  
+Also, remove `package` definition from `.java` file, so you can execute it from the given folder.  
+
+## Terms
+Stale Data --> Diferent variables storing the same data in the same entity. Such as `area` while you have `length` and `width` in the same object. `area` can be calculated but if you have a variable called `area`, you should be very carefull to ensure that the data is consistent, such as `area` is always equals to `length` * `width`.  

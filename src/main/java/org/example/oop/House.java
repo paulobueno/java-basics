@@ -1,5 +1,3 @@
-package org.example.oop;
-
 public class House {
     private int numStories;
     private int numWindows;
