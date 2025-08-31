@@ -15,6 +15,7 @@ public class IceCream {
 
     public void addTopping(String topping) {
         toppings.add(topping);
+    }
 
     public String getName() {
         return name;
