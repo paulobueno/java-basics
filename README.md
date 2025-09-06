@@ -200,3 +200,22 @@ Gives the ability to gather different data regarding an object in one place, the
 Gives the ability to hide and protect methods and data inside the object from unauthorised outside access.
 ### Notes
 In Java, a method that is not defined as `static` is an instant method.
+
+## Checked Vs Unchecked Exceptions
+There are exceptions (Checked) that must be defined, or the compiler will throw an error. They must be handled either in `try-catch` block or declared in the method signature with `throw`.  
+On the other hand, Unchecked Exceptions are optional.  
+Most of the `Unchecked Exception` are subclasses of `RuntimeException`, so in compile time, they are not necessary.
+
+### Order in Catch
+You have always to start with more specific Exceptions and then more generic Exception.  
+Furthermore, a subclass Exception cant be preceded by its superclass. If so, it would rise an compile error that the exception has already been caugth.  
+Example of wrong code:  
+```java
+    catch(IOException ex) {
+        System.out.println("Some IO exception");
+    }
+    catch(FileNotFoundException ex) {   
+        System.out.println("Can't find file!");
+    }
+```
+IOException is a superclass from FileNotFoundException, so it will rise a compilation error.
