@@ -1,0 +1,36 @@
+---------------
+Length: 11.0
+Width: 34.0
+Area: 374.0
+Perimeter: 90.0
+
+---------------
+Length: 12.0
+Width: 45.0
+Area: 540.0
+Perimeter: 114.0
+
+---------------
+Length: 23.0
+Width: 56.0
+Area: 1288.0
+Perimeter: 158.0
+
+---------------
+Length: 34.0
+Width: 67.0
+Area: 2278.0
+Perimeter: 202.0
+
+---------------
+Length: 45.0
+Width: 73.0
+Area: 3285.0
+Perimeter: 236.0
+
+---------------
+Length: 56.0
+Width: 83.0
+Area: 4648.0
+Perimeter: 278.0
+
