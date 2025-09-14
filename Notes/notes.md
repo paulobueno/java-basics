@@ -98,3 +98,19 @@ The operation is in the perspective of the application, such as:
 - Input: Read data from file
 - Output: Write data to file
 
+## UML
+When describing a class, it is devided into three sections:
+1. Name
+2. Attributes
+3. Methods  
+The signs (+ or -) represent if the attribute or method is public or private.
+```
+Animal
+----------------
+- name: string
+- weight: double
+----------------
++ Animal(name:string, weight:double)
++ getName(): string
++ setName(name:string): void
+```
